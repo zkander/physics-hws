@@ -76,10 +76,12 @@ def q3():
 
     st.subheader("Data:")
     charge = st.number_input("Enter C (nC): ", value=2.00, step=0.01)
+    
+    y2 = st.number_input("Enter y1 (mm): ", value=1.00, step=0.01)
     x1 = st.number_input("Enter x2 (mm): ", value=1.70, step=0.01)
+
     y1 = -1.3  # st.number_input("Enter y2 (mm): ", value=-1.30, step=0.01)
     x2 = -1.2  # st.number_input("Enter x1 (mm): ", value=-1.20, step=0.01)
-    y2 = st.number_input("Enter y1 (mm): ", value=1.00, step=0.01)
 
     # calculations
     dipole_moment_x = charge * 10**-9 * (x2 - x1) * 10**-3
